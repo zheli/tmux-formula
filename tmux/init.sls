@@ -5,8 +5,7 @@ tmux-ppa:
     - ppa: pi-rho/dev
   pkg.installed:
     - name: tmux
-    - fromrepo: ppa:pi-rho/dev
-    - version: 1.9a-1~ppa1~t
+    - version: 2.0-1~ppa1~t
     - refresh: True
 
 tmux_conf:
