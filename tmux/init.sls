@@ -1,7 +1,13 @@
 {% from "tmux/map.jinja" import tmux with context %}
 
-tmux:
-  pkg.installed: []
+tmux-ppa:
+  pkgrepo.managed:
+    - ppa: pi-rho/dev
+  pkg.installed:
+    - name: tmux
+    - fromrepo: ppa:pi-rho/dev
+    - version: 1.9a-1~ppa1~t
+    - refresh: True
 
 tmux_conf:
   file.managed:
